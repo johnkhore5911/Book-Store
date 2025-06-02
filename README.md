@@ -24,10 +24,7 @@ This API allows you to **Create**, **Read**, **Update**, and **Delete** (CRUD) b
 - Mongoose
 
 ---
-
 ## 📂 Project Structure
-
-
 
 bookstore-api/
 ├── config/

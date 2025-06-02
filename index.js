@@ -14,6 +14,10 @@ app.use(express.json());
 // Routes
 app.use('/books', bookRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log('Connected to MongoDB');

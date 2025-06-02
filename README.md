@@ -221,43 +221,4 @@ base_url = https://book-store-one-sand.vercel.app
 Then use the variable in your requests, e.g.:
 
 
-{{base_url}}/books
-📌 Step 5: Add Tests in Postman (Optional)
-You can add JavaScript tests under the Tests tab to automate API verification.
 
-Example test to check status 200:
-
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-💪 Pro Tips
-Group your requests into folders (GET, POST, PUT, DELETE) for clarity.
-
-Add more tests to validate response data and workflows.
-
-Use Postman environments to switch easily between local and deployed URLs.
-
-📚 Related Templates
-API testing basics
-
-API documentation
-
-Authorization methods
-
-
----
-
-If you want, I can also generate a **Postman collection JSON** file pre-configured with these requests and your deployed URL! Would you like that?
-
----
-
-### TL;DR
-
-- Yes, **update your README** to include the Vercel URL as the base API URL  
-- Update your Postman instructions to use the deployed URL  
-- Use Markdown code blocks to keep formatting intact  
-- Add example requests/responses for clarity  
-
----
-
-If you want, I can package all of this into a ready-to-go `README.md` and Postman collection JSON for you!

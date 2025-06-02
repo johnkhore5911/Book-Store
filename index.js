@@ -15,8 +15,29 @@ app.use(express.json());
 app.use('/books', bookRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send(`
+    <h1>Welcome to the Book Store Backend API!</h1>
+    <p>This is the backend URL.</p>
+    <h2>Features:</h2>
+    <ul>
+      <li>Add a new book</li>
+      <li>View all books</li>
+      <li>Update book details</li>
+      <li>Delete a book by ID</li>
+      <li>MongoDB database integration</li>
+    </ul>
+    <h2>API Endpoints:</h2>
+    <ul>
+      <li>GET /books</li>
+      <li>POST /books</li>
+      <li>PUT /books/:id</li>
+      <li>DELETE /books/:id</li>
+    </ul>
+    <h2>Book Schema:</h2>
+    <p>title, author, price, publishedDate</p>
+  `);
 });
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI).then(() => {
